@@ -20,6 +20,6 @@ class Country extends Model
 
     public function states()
     {
-        return $this->belongsTo(State::class);
+        return $this->hasMany(State::class);
     }
 }
